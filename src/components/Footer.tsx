@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Dr. Kifani Bénie</h3>
             <p style={{ color: '#94a3b8', marginBottom: '1rem' }}>Médecin Généraliste</p>
-            <p style={{ color: '#94a3b8' }}>Je consulte au Centre Médical Mongala. Mon engagement : l'excellence médicale pour votre santé à Kinshasa.</p>
+            <p style={{ color: '#94a3b8' }}>Je consulte au Centre Médical de la Mongala. Mon engagement : l'excellence médicale pour votre santé à Kinshasa.</p>
           </div>
           
           <div>
@@ -17,7 +17,7 @@ export default function Footer() {
               <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1rem' }}>
                 <MapPin size={20} style={{ marginRight: '1rem', flexShrink: 0, marginTop: '2px' }} />
                 <a href="https://maps.google.com/?q=Centre+Medical+Mongala+48+Avenue+de+la+Mongala+Kinshasa" target="_blank" rel="noopener noreferrer">
-                  Centre Médical Mongala<br/>48 Av. de la Mongala, Q/ Révolution<br/>C/ Gombe, Kinshasa, RDC
+                  Centre Médical de la Mongala<br/>48 Av. de la Mongala, Q/ Révolution<br/>C/ Gombe, Kinshasa, RDC
                 </a>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>

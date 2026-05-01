@@ -8,8 +8,34 @@ import Footer from '@/components/Footer';
 import ScrollProgress from '@/components/ScrollProgress';
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Kifani Bénie",
+    "image": "https://dr-kifani-benie.com/images/doctor_portrait.png",
+    "description": "Médecin Généraliste au Centre Médical de la Mongala à Kinshasa. Spécialiste en médecine générale et suivi pédiatrique.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "48 Avenue de la Mongala",
+      "addressLocality": "Gombe",
+      "addressRegion": "Kinshasa",
+      "addressCountry": "CD"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-4.3057",
+      "longitude": "15.3117"
+    },
+    "url": "https://dr-kifani-benie.com",
+    "telephone": "+243832138096"
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ScrollProgress />
       <Header />
       <Hero />

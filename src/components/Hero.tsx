@@ -44,7 +44,7 @@ export default function Hero() {
         <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.1 } } }}>
           
           <motion.div variants={fadeUp} style={{ display: 'inline-block', padding: '0.5rem 1rem', backgroundColor: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, color: 'white', marginBottom: '1.5rem' }}>
-            Centre Médical Mongala, Kinshasa
+            Centre Médical de la Mongala, Kinshasa
           </motion.div>
           
           <h1 className="hero-title" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3em', color: 'white' }}>

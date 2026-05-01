@@ -7,7 +7,7 @@ import { Plus, Minus, PhoneCall } from 'lucide-react';
 const faqs = [
   {
     question: "La prise de rendez-vous est-elle obligatoire pour une consultation ?",
-    answer: "Bien que le Centre Médical Mongala accueille les urgences, il est vivement recommandé de planifier votre consultation. Cela garantit une prise en charge fluide et réduit considérablement votre temps d'attente."
+    answer: "Bien que le Centre Médical de la Mongala accueille les urgences, il est vivement recommandé de planifier votre consultation. Cela garantit une prise en charge fluide et réduit considérablement votre temps d'attente."
   },
   {
     question: "Quels documents sont requis lors de la première consultation ?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Est-il possible d'organiser une consultation à domicile ?",
-    answer: "Afin de garantir un examen clinique dans des conditions optimales et de bénéficier d'un accès direct au plateau technique de l'hôpital, l'ensemble de mes consultations est réalisé exclusivement au Centre Médical Mongala."
+    answer: "Afin de garantir un examen clinique dans des conditions optimales et de bénéficier d'un accès direct au plateau technique de l'hôpital, l'ensemble de mes consultations est réalisé exclusivement au Centre Médical de la Mongala."
   }
 ];
 

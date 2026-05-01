@@ -52,7 +52,7 @@ export default function About() {
           <TextFill>Mon approche : profondément Humaine et rigoureuse</TextFill>
           
           <motion.p variants={itemVariants} className="text-muted" style={{ fontSize: '1.125rem', marginBottom: '4rem' }}>
-            Forte de mon expérience au sein du prestigieux Centre Médical Mongala à Kinshasa, 
+            Forte de mon expérience au sein du prestigieux Centre Médical de la Mongala à Kinshasa, 
             je place l'écoute et votre bien-être au centre de ma pratique médicale. Mon objectif est de vous offrir des soins adaptés, clairs et bienveillants.
           </motion.p>
         </motion.div>
@@ -87,7 +87,7 @@ export default function About() {
           <motion.div variants={itemVariants}>
             <AboutCard
               title="Cadre Médical"
-              desc="Je vous reçois au sein des infrastructures modernes et sécurisantes du Centre Médical Mongala."
+              desc="Je vous reçois au sein des infrastructures modernes et sécurisantes du Centre Médical de la Mongala."
               icon={<ShieldCheck size={32} color="white" />}
               images={[
                 "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
