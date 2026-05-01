@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile Toggle */}
-        <button className="nav-mobile-btn" onClick={() => setIsOpen(!isOpen)} style={{ padding: '0.5rem' }}>
+        <button className="nav-mobile-btn" onClick={() => setIsOpen(!isOpen)} style={{ padding: '0.5rem' }} aria-label="Menu de navigation">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>

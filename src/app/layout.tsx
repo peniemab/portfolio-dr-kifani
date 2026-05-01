@@ -70,7 +70,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={inter.variable} style={{ scrollBehavior: 'auto' }}>
+    <html lang="fr" className={inter.variable}>
+      <head>
+        {/* Fallback pour certains outils de scan si Next metadata traîne */}
+        <title>Dr. Kifani Bénie | Médecin Généraliste à Kinshasa</title>
+        <meta name="description" content="Consultez le Dr. Kifani Bénie au Centre Médical de la Mongala, Kinshasa." />
+      </head>
       <body>
         <SmoothScroll>
           {children}

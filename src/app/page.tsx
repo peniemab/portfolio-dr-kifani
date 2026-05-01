@@ -31,19 +31,21 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ScrollProgress />
       <Header />
-      <Hero />
-      <About />
-      <Expertise />
-      <AdviceCMS />
-      <Faq />
+      <main>
+        <Hero />
+        <About />
+        <Expertise />
+        <AdviceCMS />
+        <Faq />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
