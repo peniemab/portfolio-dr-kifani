@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from 'lucide-react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import Magnetic from './Magnetic';
@@ -20,14 +20,14 @@ export default function Hero() {
   const opacityElements = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const scaleImage = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
 
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
   const title = "L'excellence médicale à votre écoute.";
   const titleWords = title.split(" ");
-  const wordVariants = {
+  const wordVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.33, 1, 0.68, 1] } }
   };

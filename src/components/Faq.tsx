@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Plus, Minus, PhoneCall } from 'lucide-react';
 
 const faqs = [
@@ -24,9 +24,13 @@ const faqs = [
 ];
 
 function FaqItem({ faq, isOpen, toggleOpen }: { faq: any, isOpen: boolean, toggleOpen: () => void }) {
+  const itemVariants: Variants = { 
+    hidden: { opacity: 0, y: 20 }, 
+    visible: { opacity: 1, y: 0 } 
+  };
   return (
     <motion.div 
-      variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+      variants={itemVariants}
       style={{ marginBottom: '1rem', borderBottom: '1px solid var(--border)', overflow: 'hidden' }}
     >
       <button 
